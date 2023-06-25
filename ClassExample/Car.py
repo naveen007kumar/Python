@@ -1,6 +1,9 @@
 class Car:
 
 
+    wheels = 4
+    color = "red"
+
     def __init__(self,Make,Model,Year,Mileage):
         self.Make = Make
         self.Model = Model
