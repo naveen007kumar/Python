@@ -1,12 +1,22 @@
+## Multi-Level Inheritance and method chaining
+
 class Biryani:
 
     def biryani(self):
         print("Spicy food!!!!")
 
+
 class Restaurant(Biryani):
 
-    def biryani(self):
+    def restaurant(self):
         print("This place has biryani.")
+        return self
+    def dhaba(self):
+        print("Dhaba has no biryani.")
+        return self
+    def hotel(self):
+        print("Hotel has biryani.")
+        return self
 
 class Hyderabad(Restaurant):
 
@@ -21,3 +31,6 @@ hyd = Hyderabad()
 hyd.biryani()
 res.biryani()
 bir.biryani()
+
+### method chaining
+hyd.restaurant().dhaba().hotel()
