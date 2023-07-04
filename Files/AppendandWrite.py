@@ -8,3 +8,7 @@ with open('My_Details','a') as temp:
 
 with open('My_Details', 'w') as temp:
     temp.write("I Naveen, learn and code Python!!!")
+
+
+
+print(text[5])

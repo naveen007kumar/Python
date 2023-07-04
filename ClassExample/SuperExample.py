@@ -25,6 +25,8 @@ class Rectangle(Area):
 
 
 sqr = Square(5, 5)
+rec = Rectangle(3,5,6)
 
 
 print(sqr.square())
+print(rec.rectangle())
